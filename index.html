@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download TestMan - K-Loop</title>
+    <title>Download SnapDoc - K-Loop</title>
 
     <style>
         * {
@@ -117,7 +117,7 @@
             margin-bottom: 35px;
         }
 
-        /* v2.0.0 Main Hero Download Area */
+        /* v3.0.0 Main Hero Download Area */
         .main-download {
             background: #fafafa;
             padding: 35px 20px;
@@ -175,7 +175,19 @@
             transform: translateY(1px);
         }
 
-        /* v1.0.0 Archive Row Area */
+        /* Legacy Archive Area */
+        .legacy-header {
+            background: #f8fafc;
+            padding: 12px 30px;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 700;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
         .legacy-download {
             background: white;
             padding: 20px 30px;
@@ -183,6 +195,10 @@
             justify-content: space-between;
             align-items: center;
             text-align: left;
+        }
+
+        .legacy-download:not(:last-child) {
+            border-bottom: 1px solid #f1f5f9;
         }
 
         @media (max-width: 500px) {
@@ -214,6 +230,7 @@
             font-size: 13px;
             font-weight: 600;
             transition: all 0.2s;
+            white-space: nowrap;
         }
 
         .legacy-btn:hover {
@@ -233,14 +250,14 @@
 <div class="container">
 
     <div class="badge">Productivity Utility</div>
-    <h1>TestMan</h1>
+    <h1>SnapDoc</h1>
     
     <div class="company">
         Developed by <span>Surya Prakash</span>
     </div>
 
     <p class="description">
-        TestMan is a smart desktop environment asset built to automate raw workflow captures. It seamlessly syncs keyboard listeners to populate systemic Microsoft Word reports effortlessly.
+        SnapDoc (formerly TestMan) is a smart desktop environment asset built to automate raw workflow captures. It seamlessly syncs keyboard listeners to populate systemic Microsoft Word reports effortlessly.
     </p>
 
     <!-- Feature Grid Blueprint -->
@@ -274,26 +291,39 @@
     <!-- Dual Version Release System Matrix -->
     <div class="version-container">
         
-        <!-- Primary Block: Latest Build (v2.0.0) -->
+        <!-- Primary Block: Latest Build (v3.0.0) -->
         <div class="main-download">
-            <div class="version-tag-latest">Latest Build</div>
-            <div class="version-title">TestMan v2.0.0</div>
+            <div class="version-tag-latest">Latest Release</div>
+            <div class="version-title">SnapDoc v3.0.0</div>
             <div class="version-meta">Supported Architecture: Windows 10 / Windows 11 (64-bit)</div>
             
-            <a href="https://github.com/surya03prakash04/TestMan/releases/download/TestMan_2.0/TestMan_2.0.zip" 
+            <a href="https://github.com/surya03prakash04/TestMan/releases/download/SnapDoc_3.0/SnapDoc_3.0.zip" 
                class="download-btn" 
                download>
-                🚀 Download v2.0.0 (Latest)
+                🚀 Download v3.0.0 (Latest)
             </a>
         </div>
 
-        <!-- Secondary Block: Legacy Build (v1.0.0) -->
+        <!-- Secondary Block: Legacy Builds Archive -->
+        <div class="legacy-header">Previous Releases (TestMan)</div>
+        
         <div class="legacy-download">
             <div class="legacy-info">
-                <h4>Looking for a legacy build?</h4>
-                <p>TestMan v1.0.0 Stable Deployment Bundle</p>
+                <h4>TestMan v2.0.0</h4>
+                <p>Previous Stable Build</p>
             </div>
-            <!-- Update the URL below with your actual v1.0.0 link if desired -->
+            <a href="https://github.com/surya03prakash04/TestMan/releases/download/TestMan_2.0/TestMan_2.0.zip" 
+               class="legacy-btn" 
+               download>
+                Download v2.0.0
+            </a>
+        </div>
+
+        <div class="legacy-download">
+            <div class="legacy-info">
+                <h4>TestMan v1.0.0</h4>
+                <p>Original Deployment Bundle</p>
+            </div>
             <a href="https://github.com/surya03prakash04/TestMan/releases/download/TestMan/TestMan.zip" 
                class="legacy-btn" 
                download>
@@ -304,7 +334,7 @@
     </div>
 
     <div class="footer">
-    
+        &copy; 2026 K-Loop. All Rights Reserved.
     </div>
 
 </div>
