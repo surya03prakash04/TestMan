@@ -150,13 +150,21 @@
             margin-bottom: 24px;
         }
 
+        /* Download Button Group Wrapper */
+        .download-group {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
         .download-btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             background: #2563eb;
             color: white;
-            padding: 14px 40px;
+            padding: 14px 32px;
             text-decoration: none;
             border-radius: 10px;
             font-size: 16px;
@@ -172,6 +180,32 @@
         }
 
         .download-btn:active {
+            transform: translateY(1px);
+        }
+
+        /* Added Style for Documentation Download Button */
+        .docs-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #475569;
+            color: white;
+            padding: 14px 32px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            box-shadow: 0 4px 14px rgba(71, 85, 105, 0.25);
+            transition: all 0.2s ease;
+        }
+
+        .docs-btn:hover {
+            background: #334155;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(71, 85, 105, 0.35);
+        }
+
+        .docs-btn:active {
             transform: translateY(1px);
         }
 
@@ -260,7 +294,6 @@
         SnapDoc (formerly TestMan) is a smart desktop environment asset built to automate raw workflow captures. It seamlessly syncs keyboard listeners to populate systemic Microsoft Word reports effortlessly.
     </p>
 
-    <!-- Feature Grid Blueprint -->
     <div class="features-grid">
         <div class="feature-item">
             <span class="feature-icon">📸</span>
@@ -288,23 +321,28 @@
         </div>
     </div>
 
-    <!-- Dual Version Release System Matrix -->
     <div class="version-container">
         
-        <!-- Primary Block: Latest Build (v3.0.0) -->
         <div class="main-download">
             <div class="version-tag-latest">Latest Release</div>
             <div class="version-title">SnapDoc v3.0.0</div>
             <div class="version-meta">Supported Architecture: Windows 10 / Windows 11 (64-bit)</div>
             
-            <a href="https://github.com/surya03prakash04/TestMan/releases/download/SnapDoc_3.0/SnapDoc_3.0.zip" 
-               class="download-btn" 
-               download>
-                🚀 Download v3.0.0 (Latest)
-            </a>
+            <div class="download-group">
+                <a href="https://github.com/surya03prakash04/TestMan/releases/download/SnapDoc_3.0/SnapDoc_3.0.zip" 
+                   class="download-btn" 
+                   download>
+                    🚀 Download v3.0.0 (Latest)
+                </a>
+                
+                <a href="https://github.com/surya03prakash04/TestMan/releases/download/SnapDocD_3.0/SnapDocD_3.0.zip" 
+                   class="docs-btn" 
+                   download>
+                    📄 Download Docs
+                </a>
+            </div>
         </div>
 
-        <!-- Secondary Block: Legacy Builds Archive -->
         <div class="legacy-header">Previous Releases (TestMan)</div>
         
         <div class="legacy-download">
